@@ -1,0 +1,86 @@
+svg {
+    width: 100%;
+    height: 100%;
+}
+.js-scroll {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2.5rem, 0);
+    transform: translate3d(0, 2.5rem, 0);
+}
+.js-scroll[data-direction="left"] {
+    -webkit-transform: translate3d(-1.5rem, 0, 0);
+    transform: translate3d(-1.5rem, 0, 0);
+}
+.js-scroll.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: opacity 0.8s,transform 0.8s;
+    transition: opacity 0.8s,transform 0.8s;
+}
+
+.culture_wrap .decoration {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.culture_wrap .content {
+    position: relative;    
+    z-index: 2;
+}
+.culture_contents {
+    padding-top: 11.25rem;
+}
+.content {
+    width: 100%;
+    max-width: 77.5rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    z-index: 1;
+}
+.decoration > [class^='deco'] {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+.decoration .deco_bell {
+    left: 6.75rem;
+    top: -3.2rem;
+    width: 11.125rem;
+    height: 17.5rem;
+}
+.decoration .deco_circle_mid {
+    right: -6.625rem;
+    bottom: -8.5rem;
+    width: 8.875rem;
+    height: 16.5rem;
+}
+.decoration .deco_bell_big {
+    left: -24.5rem;
+    top: -9rem;
+    width: 55.375rem;
+    height: 74.125rem;
+    opacity: 0.017;
+}
+.decoration .deco_bell svg .path {
+    fill: #57edc1;
+}
+.decoration .deco_bell_big svg .path {
+    fill: #fff;
+}
+.decoration .deco_bell_big svg .circle {
+    fill: #fff;
+}
+.decoration .deco_circle_mid svg path {
+    fill: #6183bc;
+}
+#a11y-content {
+    position: absolute;
+    top: -5rem;
+}
+.decoration .deco_bell svg .circle {
+    fill: #2369dd;
+}

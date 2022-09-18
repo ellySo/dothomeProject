@@ -1,0 +1,21 @@
+[
+   {
+    "naviText" : "재단소개",
+    "aHref" : "#hada_swiper",
+    "cls" : "text-dark scrollPage navia",
+    "pcls" : "ml-md-3 mx-2"
+   },
+   {
+    "naviText" : "재단비전",
+    "aHref" : "#happy_thumb",
+    "cls" : "text-dark scrollPage navia",
+    "pcls" : "ml-md-3 mx-2"
+   },
+   {
+    "naviText" : "재단소식",
+    "aHref" : "#aboutus",
+    "cls" : "text-dark scrollPage navia",
+    "pcls" : "ml-md-3 mx-2"
+   }
+]
+    

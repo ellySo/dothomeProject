@@ -1,0 +1,27 @@
+{
+    "title" : "행복의 원천, 함께 만들어 갑니다",
+    "news_list" : [
+        {
+            "href" : "https://www.kdcf.or.kr/Board/Detail?_boardNo=5",
+            "imgSrc" : "https://cdn.kdcf.or.kr/kcf/Upload/thumbnail/202110/15/2021101514205430511eac0cf8fc.400x225.jpg",
+            "text" : "[함께; 하다] 맞춤정장 전달식",
+            "delay" : 0
+        },
+        {
+            "href" : "https://www.kdcf.or.kr/Board/Detail?_boardNo=5",
+            "imgSrc" : "https://cdn.kdcf.or.kr/kcf/Upload/thumbnail/20219/14/202109141548501679bd0eff988a.400x225.jpg",
+            "text" : "‘코딩교육 지원사업’ 협약 체결",
+            "delay" : 300
+        },
+        {
+            "href" : "https://www.kdcf.or.kr/Board/Detail?_boardNo=5",
+            "imgSrc" : "https://cdn.kdcf.or.kr/kcf/Upload/thumbnail/20219/15/20210915174818444c325934c884.400x225.jpg",
+            "text" : "[코딩; 하다] 첫 번째 교육 현장",
+            "delay" : 600
+        }
+    ],
+    "btnText" : {
+        "text" : "재단 소식 보러가기",
+        "href" : "https://www.kdcf.or.kr/Board/News"
+    }
+}

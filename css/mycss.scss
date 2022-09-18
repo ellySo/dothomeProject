@@ -1,0 +1,280 @@
+html, body{
+    font-size: 16px;
+    font-family: 'GmarketSansMedium';
+    overflow-x: hidden;
+}
+ul, li { list-style: none;}
+a:hover{ text-decoration: none;}
+.section{ min-height: 600px;}
+
+.d-none{ display: none !important;}
+.blind{
+position: absolute;
+z-index: -1;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+clip: rect(1px, 1px, 1px, 1px);
+clip-path: inset(50%);
+}
+
+// layout
+#gnb{ 
+
+    .scrollPage{
+    position: relative;
+    text-decoration: none;
+  
+    &:after{
+      content: "";
+      position: absolute;
+      height: 3px;
+      bottom: -5px;
+      left:0; right: 0;
+      width: 0;
+      background-color: rgb(11, 30, 144, 0.9);
+      transition: 0.5s;
+      margin: 5px auto 0;  // 가운데정렬
+    }
+    &.on:after,
+    &:hover:after{
+         width: 100%; // 좌우로 퍼지기
+
+  
+    }
+  }
+}
+  a.scrollPage:hover,
+  a.scrollPage.on{
+    color:rgba(11, 30, 144, 0.9) !important
+  }
+
+#hd{
+    padding: 1rem 0;
+    transition: 0.5s;
+    &.on{
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #ccc;
+        background-color: #ffffff80;
+        h1{
+            a{
+                height: 2.0rem;
+                overflow: hidden;
+            }
+        }
+    }
+    h1{
+        width: 10rem;
+        a{
+            display: block;
+            img{
+                width: 100%;
+            }
+        }
+    
+    }
+
+}
+
+#main_banner{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 53.25rem;
+    background: url(https://cdn.kdcf.or.kr/kcf/contents/img/portal/main/visual.jpg) no-repeat center 0/cover;
+}
+#hada_swiper{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 53.25rem;
+    background: rgba(10, 28, 56, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .culture_item{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin: 4rem 0;     
+        button{
+            width: 30%;
+            background-color: transparent;           
+            border: 0;
+            font-size: 1rem; color: #ffffff80;
+            text-align: left;
+            h3{
+                font-size: 1.3rem;
+                margin-bottom: 0;                
+            }
+            span{line-height: 0; height: 0; display: block; margin-top: .5rem;
+                transform: translateY(-1.3rem); //나의 height 값으로부터                
+                opacity: 0; visibility: hidden;
+            }
+        }                    
+        figure{
+            strong{
+                color: white;
+                top: 0;
+                right: 0;
+                position: absolute;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-30%); //나의 height 값으로부터                
+            img{
+                max-width: 100%;
+                border-radius: 20px;
+                }
+            }
+        }
+        &.active{
+            button{
+                color: white;
+                h3{
+                    font-weight: bold; font-size: 1.8rem; }
+                span{ transform: translateY(0); transition: 0.5s; opacity: 1; visibility: visible;}                          
+                }                
+            
+            figure{
+                strong{                                        
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}
+
+#happy_thumb.news_wrap{
+   display:block;position:relative;padding:5.375rem 0 8.375rem;
+    h2{
+        display:block;font-size:2.375rem;color:#142849
+    }
+    .news_list{
+        display:flex;align-items:flex-start;justify-content:flex-start;margin-top:4.6875rem;
+            .news_item{
+                display:block;flex:0 0 32%
+            }
+    }
+    .decoration{
+        .deco_bell{
+            left:6.75rem;top:-3.2rem;width:11.125rem;height:17.5rem;
+            svg {
+                .path{fill:#57edc1}
+                .circle{fill:#2369dd}
+            }
+        }
+        .deco_question{
+            right:24.5rem;top:-48rem;z-index:-1;width:30.6875rem;height:100.5rem;opacity:0.25;
+            svg{
+                path{fill:#89f8e4}
+            }
+        }
+    
+        .deco_circle_mid{
+            right:-6.625rem;bottom:-8.5rem;width:8.875rem;height:16.5rem;
+            circle_mid svg path{
+                fill:#6183bc}
+        }
+        .deco_bell_big{
+            left:-24.5rem;top:-9rem;width:55.375rem;height:74.125rem;opacity:0.017;
+            svg{
+                .path{fill:#fff}
+                .circle{fill:#fff}
+            }
+        }
+        .deco_dots_two{
+            top:4.375rem;left:50%;margin-left:-50rem;width:5.25rem;height:5.3125rem;
+            svg {
+                .circle{fill:#57edc1}
+                .line{fill:#2369dd}
+            }
+        }
+        .deco_circle_opa{
+            bottom:-9rem;left:4rem;z-index:-1;width:24.5rem;height:24.5rem;
+            svg circle{fill:#f1f6ff}
+        }
+        .deco_circle_multiple{
+            bottom:-6.5rem;right:5.625rem;width:14.5rem;height:13rem;
+            svg {
+                .circle_green{fill:#57edc1}
+                .circle_blue{fill:#2369dd}
+                .line{fill:#2369dd}
+            }
+        }
+    } 
+}
+
+
+
+.news_list .news_item ~ .news_item{margin-left:2%}
+.news_list .news_item .news_item_wrap{display:block}
+.news_list .news_item .news_img{display:block;position:relative;width:100%;margin-bottom:1.5rem;padding-bottom:56.25%;border-radius:15px;overflow:hidden}
+.news_list .news_item img{position:absolute;width:100%;height:100%;border-radius:0.875rem}
+.news_list .news_item .news_text{padding-left:0.3rem;font-size:1.25rem;color:#142849;font-weight:800;line-height:1.75rem}
+.news_more_wrap .btn_news_more{display:none;align-items:center;justify-content:center;width:35rem;max-width:100%;height:7.375rem;margin:0 auto;border:.1875rem solid rgba(20, 39, 72, .2);border-radius:4rem;overflow:hidden}
+.news_more_wrap .btn_news_more span{font-size:1.875rem;color:#142849}
+.news_more_wrap .btn_news_more .icn_plus{margin-right:1.4rem}
+
+
+#aboutus{
+    position: relative;
+    width: 100%;
+    height: 38.75rem;
+    background-color: rgba(11, 30, 144, 0.9);
+    overflow: hidden;
+    background-image: linear-gradient( 0deg, transparent 24%, rgba(65, 90, 219, 0.04) 25%, rgba(65, 90, 219, 0.04) 26%, transparent 27%, transparent 74%, rgba(65, 90, 219, 0.04) 75%, rgba(65, 90, 219, 0.04) 76%, transparent 77%, transparent ),linear-gradient( 90deg, transparent 24%, rgba(65, 90, 219, 0.04) 25%, rgba(65, 90, 219, 0.04) 26%, transparent 27%, transparent 74%, rgba(65, 90, 219, 0.04) 75%, rgba(65, 90, 219, 0.04) 76%, transparent 77%, transparent );
+    background-size: 7.5rem 7.5rem;
+    font-size: 2em;
+    .container{
+        background-image: url(https://cdn.kdcf.or.kr/kcf/contents/img/portal/main/deco_together.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+    
+        .btn{
+            width: 13.125rem;
+            height: 3.875rem;
+            display: block;
+            margin-top: 2rem;
+            background: url(https://cdn.kdcf.or.kr/kcf/contents/img/portal/main/btn_rounded.svg) no-repeat;
+            box-sizing: cover;
+        }
+    }
+    &:before{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 30rem;
+      height: 100%;
+      background: url(https://cdn.kdcf.or.kr/kcf/contents/img/portal/main/deco_bottom_left.png);
+      background-size: 100% auto;
+      background-position: left top;
+      
+    }
+
+}
+#ft{
+position: relative;
+width: 100%;
+padding: 3.375rem 0 2.5rem;
+background: #081121;
+color: white;
+font-size: 0.95em;
+.container{
+    .ftinner{
+        .email{
+
+        }
+        .copy{
+            font-size: 0.75em;
+
+        }
+    }
+}
+
+}

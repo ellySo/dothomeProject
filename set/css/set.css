@@ -1,0 +1,50 @@
+*{ margin: 0; padding: 0;}
+.slide{ overflow: hidden; height: 700px; position: relative;}
+.slide-wrapper{ }
+.slide-wrapper a{ display: block; text-align: center;}
+.slide-item[data-key='0']{
+    
+}
+.slide-item[data-key='1']{
+    transform: translateY(-100%);    
+}
+.slide-item[data-key='2']{
+    transform: translateY(-200%);    
+}
+
+.btns{ position: absolute; height: 0; top: 50%; left: 2rem; right:2rem; z-index: 100;
+    display: flex; justify-content: space-between;}
+.btns button{ background-color: transparent;
+    width: 5rem; height: 5rem; font-size: 0; border: 1px solid #222;
+    cursor: pointer;
+    transform: translateY(-50%) rotate(-45deg);
+}
+.btns .prev{ border-width: 1px 0 0 1px;}
+.btns .next{ border-width: 0 1px 1px 0;}
+.indicate{ position: absolute; bottom: 2rem; left: 0; right: 0;
+            display: flex; justify-content: center; z-index: 100;}
+.indicate button{ background-color:  transparent; border: 0; font-size: 1.5rem; margin: 0 0.8rem;
+border-bottom: 2px solid transparent; cursor: pointer;}
+
+/* 활성화 */
+.indicate button.act{ 
+    color: red; border-bottom-color: red;}
+.slide-item.act{ 
+    opacity: 1;    
+    z-index: 10; 
+    visibility: visible;    
+    }
+.slide-item{ opacity: 0; visibility: hidden; transition: 0.5s; position: relative;}
+
+.news_wrap{display:block;position:relative;padding:5.375rem 0 8.375rem}
+.news_wrap h2{display:block;font-size:2.375rem;color:#142849}
+.news_list{display:flex;align-items:flex-start;justify-content:flex-start;margin-top:4.6875rem}
+.news_list .news_item{display:block;flex:0 0 32%}
+.news_list .news_item ~ .news_item{margin-left:2%}
+.news_list .news_item .news_item_wrap{display:block}
+.news_list .news_item .news_img{display:block;position:relative;width:100%;margin-bottom:1.5rem;padding-bottom:56.25%;border-radius:15px;overflow:hidden}
+.news_list .news_item img{position:absolute;width:100%;height:100%;border-radius:0.875rem}
+.news_list .news_item .news_text{padding-left:0.3rem;font-size:1.25rem;color:#142849;font-weight:800;line-height:1.75rem}
+.news_more_wrap .btn_news_more{display:none;align-items:center;justify-content:center;width:35rem;max-width:100%;height:7.375rem;margin:0 auto;border:.1875rem solid rgba(20, 39, 72, .2);border-radius:4rem;overflow:hidden}
+.news_more_wrap .btn_news_more span{font-size:1.875rem;color:#142849}
+.news_more_wrap .btn_news_more .icn_plus{margin-right:1.4rem}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 폰트 -->
+    <link rel="stylesheet" href="/fonts/fonts.css">
+    <!-- 웹표준 및 공통클래스(그리드시스템)-->
+    <link rel="stylesheet" href="/plugin/bootstrap/bootstrap.min.css">
+    <!-- 플러그인 -->
+    <link rel="stylesheet" href="/plugin/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/plugin/aos/aos.css">    
+    <!-- 커스터마이징 -->
+    <link rel="stylesheet" href="/css/hada.css">
+    <link rel="stylesheet" href="/css/mycss.min.css?ver=<?php echo time(); ?>">
+</head>
+<body id="topPage">
+    <div class ="wrap">
+        <header class="fixed-top" id="hd">
+            <div class="container d-flex justify-content-between align-items-center">
+                <h1 class="mb-0 col-4 col-sm-2">
+                    <a href="#topPage" class="scrollPage">
+                        <img src="https://cdn.kdcf.or.kr/kcf/contents/img/common/logo.svg" alt="">
+                    </a>
+                </h1>
+                <ul id="gnb" class="d-flex mb-0">
+                    <!-- <li class="ml-md-3 mx-2"><a href="#main_banner" class="text-dark scrollPage navia">재단비전</a></li>
+                    <li class="ml-md-3 mx-2"><a href="#hada_swiper" class="text-dark scrollPage navia">재단소식</a></li>
+                    <li class="ml-md-3 mx-2"><a href="#happy_thumb" class="text-dark scrollPage navia">재단소개</a></li> -->
+                </ul>
+            </div>    
+        </header>
+
+        <section id="main_banner" class="section">
+            <div class="content">
+                <div class="d-flex">
+                    누구나 자유롭게
+                    누릴 수 있는 문화가 되도록
+                    평등한 기회의 장을 김대일문화재단이 만들어가겠습니다.
+                </div>
+            </div>
+        </section>
+
+        <section id="hada_swiper" class="section culture_wrap">
+            <sub id="a11y-content"></sub>
+            <h2 class="blind">재단사업</h2>
+            <div class="content culture_contents js-scroll active" data-delay="0.3">
+                <article class="culture_item active">
+                    <button type="button" class="title_wrap">
+                        <h3 class="title squareR">문화를 만들다</h3>
+                        <span class="text">문화산업 시대의 미래인재 양성</span>
+                    </button>
+                    <figure id="make" class="active">
+                        <strong>
+                            <img src="https://cdn.kdcf.or.kr/kcf/contents/img/portal/main/thumb_make.jpg" alt="모니터를 가리키며 무언가를 열심히 몰두해서 협업하는 모습">
+                            <figcaption class="btn_wrap">
+                                <cite>4차산업 시대를 함께 만들어갈 주인공을 찾습니다.</cite>
+                                <a href="https://www.kdcf.or.kr/Foundation/Service#coding" class="btn btn_round_border"><span><em class="squareR">코딩</em> ; 하다</span></a>
+                                                
+                           </figcaption> 
+                        </strong>                        
+
+                    </figure>
+                </article>
+                <article class="culture_item ">
+                    <button type="button" class="title_wrap">
+                        <h3 class="title squareR">문화를 즐기다</h3>
+                        <span class="text">문화 콘텐츠 확산을 통한 문화적 격차 완화</span>
+                    </button>
+                    <figure id="enjoy">
+                        <strong>
+                            <img src="https://cdn.kdcf.or.kr/kcf/contents/img/portal/main/thumb_enjoy.jpg" alt="엄마와 아이가 함께 낚시 장난감을 가지고 노는 모습">
+                            <figcaption class="btn_wrap">
+                                <cite>놀이를 통해 자유롭게 자신을 표현할 수 있도록&nbsp;함께 하겠습니다.</cite>
+                                <a href="https://www.kdcf.or.kr/Foundation/Service#playing" class="btn btn_round_border"><span><em class="squareR">놀이</em> ; 하다</span></a>
+                                                
+                        </figcaption>
+                    </strong>
+                    </figure>
+                </article>
+                <article class="culture_item">
+                    <button type="button" class="title_wrap">
+                        <h3 class="title squareR">문화를 나누다</h3>
+                        <span class="text">지역사회의 소외된 이웃을 위한 지원</span>
+                    </button>
+                    <figure id="together">
+                        <strong>
+                            <img src="https://cdn.kdcf.or.kr/kcf/contents/img/portal/main/thumb_together.jpg" alt="남학생 2명과 여학생 1명이 손을 번쩍 들고 만세를 하고 있는 뒷모습">
+                            <figcaption class="btn_wrap">
+                                <cite>새로운 시작과 도전을 응원하겠습니다.</cite>
+                                <a href="https://www.kdcf.or.kr/Foundation/Service#together" class="btn btn_round_border"><span><em class="squareR">함께</em> ; 하다</span></a>
+                      
+                       
+                        </figcaption>
+                    </strong>
+                    </figure>
+                </article>
+            </div>
+    
+            <div class="decoration">
+                <i class="deco_bell js-scroll active" data-direction="left" data-position="1.3" style="transition-delay: 0s; transition-duration: 0.8s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226 294" enable-background="new 0 0 226 294">
+                        <path class="path" d="M112.3 77.3c-57.4 0-104 46.7-104 104.2 0 57.6 46.5 104.2 104 104.2 57.4 0 104-46.7 104-104.2-.1-57.6-46.6-104.2-104-104.2zm0 156.3c-28.7 0-52-23.3-52-52.1s23.3-52.1 52-52.1 52 23.3 52 52.1c-.1 28.8-23.3 52.1-52 52.1z"></path>
+                        <circle class="circle" cx="112.8" cy="33.4" r="25.7"></circle>
+                    </svg>
+                </i>
+                <i class="deco_circle_mid js-parallax" data-strength="0.05" data-dir="x" style="transform: translate3d(-37.5489px, 0px, 0px);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183.8 182.1" enable-background="new 0 0 183.8 182.1">
+                        <path d="M163.8 137.1c1.2-1.8 2.3-3.7 3.3-5.6l-35.1 35c1.9-1 3.8-2.1 5.6-3.3l26.2-26.1zM172.2 119.9c.4-1.1.8-2.3 1.2-3.5l-56.4 56.4c1.2-.4 2.3-.7 3.5-1.2l51.7-51.7zM175.6 107.8c.2-.9.4-1.9.5-2.8l-70.5 70.5 2.8-.5 67.2-67.2zM177 97.7c.1-.8.1-1.6.2-2.5l-81.4 81.4c.8 0 1.6-.1 2.5-.2l78.7-78.7zM177.2 88.7l-.1-2.2-90.1 90 2.2.1 88-87.9zM176.6 80.6c-.1-.7-.2-1.4-.3-2l-97.2 97.2c.7.1 1.4.2 2 .3l95.5-95.5zM175.3 73.1l-.4-1.9-103.2 103.1 1.9.4 101.7-101.6zM173.5 66.1l-.6-1.8-108 108.1 1.8.6 106.8-106.9zM171.3 59.6c-.2-.6-.4-1.1-.7-1.6l-112.1 112 1.6.7 111.2-111.1zM168.6 53.6l-.8-1.5-115.2 115.2 1.5.8 114.5-114.5zM165.6 47.9c-.3-.5-.6-1-.9-1.4l-117.7 117.6c.5.3 1 .6 1.4.9l117.2-117.1zM162.2 42.5c-.3-.5-.6-.9-1-1.4l-119.5 119.5c.5.3.9.6 1.4 1l119.1-119.1zM158.4 37.5l-1-1.3-120.6 120.6c.4.4.8.7 1.3 1l120.3-120.3zM154.4 32.8l-1.1-1.2-121.1 121.1c.4.4.8.8 1.2 1.1l121-121zM150 28.4l-1.2-1.1-120.9 120.9 1.1 1.2 121-121zM145.3 24.4l-1.3-1-120.1 120.1 1 1.3 120.4-120.4zM140.3 20.6l-1.4-.9-118.7 118.7.9 1.4 119.2-119.2zM135 17.2c-.5-.3-1-.6-1.5-.8l-116.6 116.6c.3.5.6 1 .8 1.5l117.3-117.3zM129.3 14.1c-.5-.3-1-.5-1.6-.7l-113.8 113.8c.2.5.5 1 .7 1.6l114.7-114.7zM123.3 11.5l-1.7-.6-110.2 110.1.6 1.7 111.3-111.2zM116.8 9.2c-.6-.2-1.2-.4-1.8-.5l-105.8 105.7.5 1.8 107.1-107zM109.8 7.4l-1.9-.4-100.4 100.4.4 1.9 101.9-101.9zM102.4 6.1c-.7-.1-1.4-.2-2.1-.2l-93.9 93.8.2 2.1 95.8-95.7zM94.3 5.5h-2.3l-86 86v2.3l88.3-88.3zM85.3 5.6l-2.5.2-76.4 76.4c-.1.8-.2 1.7-.2 2.5l79.1-79.1zM75.3 7c-1 .2-2 .4-2.9.6l-64.2 64.2c-.2 1-.4 2-.6 2.9l67.7-67.7zM63.3 10.2c-1.2.4-2.5.9-3.7 1.4l-47.4 47.4c-.5 1.2-1 2.5-1.4 3.7l52.5-52.5zM46.6 18.2c-2.6 1.6-5.2 3.4-7.7 5.4l-14.8 14.7c-1.9 2.5-3.7 5-5.4 7.7l27.9-27.8z"></path>
+                    </svg>
+                </i>
+                <i class="deco_bell_big js-scroll active" data-direction="left" style="transition-delay: 0s; transition-duration: 0.8s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226 294" enable-background="new 0 0 226 294">
+                        <path class="path" d="M112.3 77.3c-57.4 0-104 46.7-104 104.2 0 57.6 46.5 104.2 104 104.2 57.4 0 104-46.7 104-104.2-.1-57.6-46.6-104.2-104-104.2zm0 156.3c-28.7 0-52-23.3-52-52.1s23.3-52.1 52-52.1 52 23.3 52 52.1c-.1 28.8-23.3 52.1-52 52.1z"></path>
+                        <circle class="circle" cx="112.8" cy="33.4" r="25.7"></circle>
+                    </svg>
+                </i>
+            </div>
+        </section>
+
+        <section id="happy_thumb" class="section news_wrap">
+            <style>
+                h2.squareR{ position: relative; display: inline-block !important;}
+                h2.squareR:before{ 
+                    content: ""; display: block;
+                    position: absolute; left: 0; bottom: 10px; height: 15px;
+                    background-color: rgba(254, 254, 0, .6);
+                    width: 0;
+                    transition: 0.5s;
+                    transition-delay: 0.5s;
+                }
+                h2.squareR.aos-animate:before{
+                    width: 100%;
+                }
+                h2.squareR span{ position: relative;}
+
+            </style>
+           
+                <div class="content js-scroll active" data-delay="0.3" style="transition-delay: 0.3s; transition-duration: 0.8s;">
+                    
+                    <h2 class="squareR" data-aos="fade-up" data-aos-offset="300" >
+                        <!-- <span>행복의 원천, 함께 만들어 갑니다</span> -->
+                    </h2>
+                    <div class="news_list">
+                            <!-- <a href="https://www.kdcf.or.kr/Board/Detail?_boardNo=5" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" class="news_item">
+                                <span class="news_item_wrap">
+                                    <span class="news_img"><img src="https://cdn.kdcf.or.kr/kcf/Upload/thumbnail/202110/15/2021101514205430511eac0cf8fc.400x225.jpg" class="item" alt="[함께; 하다] 맞춤정장 전달식" title="" onerror="this.src='https://cdn.kdcf.or.kr/kcf/contents/img/common/board_thumbnail_default.jpg'"></span>
+                                    <span class="news_text squareR css-ellipsis">[함께; 하다] 맞춤정장 전달식</span>
+                                </span>
+                            </a>
+                            <a href="https://www.kdcf.or.kr/Board/Detail?_boardNo=2" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" class="news_item">
+                                <span class="news_item_wrap">
+                                    <span class="news_img"><img src="https://cdn.kdcf.or.kr/kcf/Upload/thumbnail/20219/14/202109141548501679bd0eff988a.400x225.jpg" class="item" alt="‘코딩교육 지원사업’ 협약 체결" title="" onerror="this.src='https://cdn.kdcf.or.kr/kcf/contents/img/common/board_thumbnail_default.jpg'"></span>
+                                    <span class="news_text squareR css-ellipsis">‘코딩교육 지원사업’ 협약 체결</span>
+                                </span>
+                            </a>
+                            <a href="https://www.kdcf.or.kr/Board/Detail?_boardNo=4" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000" class="news_item">
+                                <span class="news_item_wrap">
+                                    <span class="news_img"><img src="https://cdn.kdcf.or.kr/kcf/Upload/thumbnail/20219/15/20210915174818444c325934c884.400x225.jpg" class="item" alt="[코딩; 하다] 첫 번째 교육 현장" title="" onerror="this.src='https://cdn.kdcf.or.kr/kcf/contents/img/common/board_thumbnail_default.jpg'"></span>
+                                    <span class="news_text squareR css-ellipsis">[코딩; 하다] 첫 번째 교육 현장</span>
+                                </span>
+                            </a> -->
+                    </div>
+                    <div class="news_more_wrap only-m">
+                        <a href="https://www.kdcf.or.kr/Board/News" class="btn_news_more">
+                            <i class="icn_plus"></i>
+                            <span>재단 소식 보러가기</span>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="decoration">
+                    <i class="deco_question js-parallax" data-strength="0.05" data-dir="y+" style="transform: translate3d(0px, 95.9522px, 0px);">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.5 722.2" enable-background="new 0 0 490.5 722.2">
+                            <path d="M481.8 178.4c-10-41.4-28.1-78.6-57.6-109.8-36.8-39.1-82.2-61-135.4-67-5.3-.6-10.7.1-15.8-1.6h-25c-8.1.7-16.2 1.2-24.3 2.3-32.9 4.4-64.1 13.8-93 30.3-35.2 20.2-63.1 47.7-82.3 83.6-24.5 45.8-28.4 94.6-19.8 144.8 9 52.4 36.8 92.8 80.6 122.5 19.7 13.4 41.3 23 62.7 33 9.5 4.4 9.8 5.5 3.3 13.5-10.9 13.4-23.6 24.9-36.8 35.9-31.6 26.5-65.1 50.3-102.4 68.3-10.8 5.2-19.1 13.2-25.5 23.3-5.5 8.8-8.1 18.5-10.5 28.4v20c.3 1.1.7 2.2.9 3.4 4.8 32.5 18.7 60.3 42.7 82.7 19.4 18.1 42.4 28.5 69.1 30.1 14.5.8 27.8-3.7 41.1-9.1 66.2-27.4 126.2-64.7 178.9-113.4 35.9-33.2 67.1-70.4 92.5-112.2 37.7-62.1 60.4-129 64.6-201.6 2-36.1.5-72.1-8-107.4zm-41.9 261.6c-19.6 41.8-45.3 79.6-75.7 114.2-45.8 52.1-100.3 92.8-161.3 125.3-20.5 10.9-41.7 20.1-63.1 28.9-21.3 8.8-41.5 4.7-61.4-4.4-35.6-16.2-55-45.5-65.6-81.8-5-17.2-6.5-34.2 1.2-51.2 5.9-13.1 14.5-23 27.9-29.3 33.1-15.7 63-36.7 91.5-59.7 17.1-13.8 33.7-28.2 48.1-45 1.5-1.8 2.9-3.6 4.2-5.6 6-8.9 4.7-15.7-4.7-20.7-10-5.4-20.4-9.8-30.6-14.7-23.2-11-44.9-24.3-63.4-42.2-19.1-18.5-32.8-40.6-41.7-65.7-9.2-26.1-13.2-53.1-12-80.6 2.1-46.9 17.9-89 49.1-124.5 33.4-37.9 76.4-58.7 125.1-69 17.3-3.6 34.8-5.6 52.6-5.3 52.6.4 99.9 16.2 140.7 50 28.1 23.3 47.2 53.1 60.7 86.7 11.8 29.3 17.4 60 19.4 91.5 4.6 71.5-10.9 138.8-41 203.1z"></path>
+                        </svg>
+                    </i>
+                    <i class="deco_dots_two js-scroll active" data-direction="left" style="transition-delay: 0s; transition-duration: 0.8s;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.6 90.7" enable-background="new 0 0 89.6 90.7">
+                            <path class="circle" d="M45.1 22.1c-5.2 0-9.4-4.2-9.4-9.3s4.2-9.3 9.4-9.3 9.4 4.2 9.4 9.3-4.2 9.3-9.4 9.3zm0 46.5c5.2 0 9.4 4.2 9.4 9.3 0 5.2-4.2 9.3-9.4 9.3s-9.4-4.2-9.4-9.3c0-5.1 4.2-9.3 9.4-9.3z"></path>
+                            <path class="line" d="M77.4 54.4c5.1 0 9.3-4.2 9.3-9.3s-4.2-9.3-9.3-9.3h-64.8c-5.1 0-9.3 4.2-9.3 9.3s4.2 9.3 9.3 9.3h64.8z"></path>
+                        </svg>
+                    </i>
+                    <i class="deco_circle_opa js-parallax" data-strength="0.05" data-dir="y+" style="transform: translate3d(0px, 95.9522px, 0px);">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.4 45.5" enable-background="new 0 0 46.4 45.5">
+                            <circle cx="23.2" cy="22.8" r="22.1"></circle>
+                        </svg>
+                    </i>
+                    <i class="deco_circle_multiple js-scroll" data-direction="right" style="transition-delay: 0s; transition-duration: 0s;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249.7 225.2" enable-background="new 0 0 249.7 225.2">
+                            <path class="line" d="M127.3 86.7l-89.9.3c-14.2 0-25.7 11.5-25.7 25.7s11.5 25.7 25.7 25.7l89.9-.4c14.2 0 25.7-11.5 25.7-25.7s-11.4-25.6-25.7-25.6z"></path>
+                            <path class="circle_green" d="M216.8 138.5c-14.2 0-25.7-11.5-25.7-25.7s11.5-25.8 25.7-25.8 25.7 11.5 25.7 25.7-11.6 25.8-25.7 25.8zm-22.6-90.5c-7.1 12.3-22.8 16.5-35.1 9.4s-16.5-22.8-9.5-35.1c7.1-12.3 22.8-16.5 35.1-9.4 12.4 7.1 16.6 22.8 9.5 35.1zm-35.1 120.1c12.3-7.1 28-2.9 35.1 9.4 7.1 12.3 2.9 28-9.5 35.1-12.3 7.1-28 2.9-35.1-9.4-7.1-12.2-2.8-28 9.5-35.1z"></path>
+                            <path class="circle_blue" d="M95.1 57.4c-12.3 7.1-28 2.9-35.1-9.4-7.1-12.3-2.9-28 9.4-35.1s28-2.9 35.1 9.4c7.2 12.2 2.9 27.9-9.4 35.1zm-35.1 120.1c7.1-12.3 22.8-16.5 35.1-9.4s16.6 22.8 9.5 35.1c-7.1 12.3-22.8 16.5-35.1 9.4-12.4-7.1-16.6-22.8-9.5-35.1z"></path>
+                        </svg>
+                    </i>
+                </div>
+          
+        </section>
+        
+        <section id="aboutus" class="section">
+            <div class="container h-100 d-flex text-white flex-column justify-content-center">
+                <div class="">
+                    <p>문화에는 즐거움과 행복, 그리고<br>
+                        사람들을 연결하는 힘이 있다고 생각합니다.</p>
+                    <p>모든 사람들과 함께 문화를 누리고<br>
+                        그 즐거움과 행복을 함께하고 싶습니다.</p>
+                    <a href="" class="btn text-white d-flex flex-column justify-content-center">
+                            About us
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer id="ft">
+            <div class="container d-flex">
+                <h2 class="mb-0 col-4 col-sm-2 pr-sm-5"><img src="https://cdn.kdcf.or.kr/kcf/contents/img/common/foot_logo.svg"></h2>
+                <div class="ftinner">
+                    <a href="" class="email">문의하기</a>
+                    <p class="ftinfo"><strong>(재)김대일문화재단</strong>
+                        <span>경기도 의왕시 성고개로 53 에이스청계타워 A동 705호</span>
+                        <span>대표자명:황지영</span>
+                    </p>
+                        <ul class="p-0 m-0 d-flex">
+                            <li class="mb-0"><a href=""><img src="https://cdn.kdcf.or.kr/kcf/contents/img/common/foot_mcst.png"></a></li>
+                            <li class="mb-0"><a href=""><img src="https://cdn.kdcf.or.kr/kcf/contents/img/common/foot_nts.png"></a></li>
+                        </ul>
+                        <p class="copy">© 김대일문화재단. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 자바스크립트 내장형으로 처리 -->
+    <script src="/plugin/swiper/swiper-bundle.min.js"></script>
+    <script src="/plugin/aos/aos.js"></script>
+    
+    <!-- 커스터마이징 -->
+    <script 
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous">
+    </script>
+    <script src="/js/myjs.js?ver=<?php echo time();?>"></script>
+    
+</body>
+</html>

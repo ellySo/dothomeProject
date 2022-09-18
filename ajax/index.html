@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <script>
+        // ajax라는 메서드는 제이쿼리의 비동기통신메서드
+        // 브라우저 서버에서 필요한 디비에 접속해서 데이터를 가져옴
+        // 새로고침(전체적으로 새롭게 다시 세팅 : 서버)과 랜더링(내부의 특정 div, section 부분을 다시 로딩 : 자바스크립트)
+
+        $.ajax({
+            type: 'GET',
+            url: '/data/navi.json',
+            dataType : 'json',
+            success : function(data){
+                console.log(typeof data)
+                console.log(data)
+                var navitag = '';
+                for (var i in data){
+                    navitag += `<li class='${data[i].pcls}'>
+                                    <a href='${data[i].aHref}' class='${data[i].cls}'>${data[i].naviText}</a>
+                                </li>`
+                }
+                $('body').html(navitag);
+            },
+            error : function(data, status, error ){
+                console.log(data.status, error)
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+html, body {
+  font-size: 16px;
+  font-family: "GmarketSansMedium";
+}
+
+ul, li {
+  list-style: none;
+}
+
+.section {
+  min-height: 600px;
+}
+
+#main_banner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 53.25rem;
+  background: url(https://cdn.kdcf.or.kr/kcf/contents/img/portal/main/visual.jpg) no-repeat center 0/cover;
+}
+
+#hada_swiper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 53.25rem;
+  background: rgba(10, 28, 56, 0.95);
+}
+
+#happy_thumb {
+  display: block;
+  position: relative;
+  padding: 5.375rem 0 8.375rem;
+}
+
+#aboutus {
+  position: relative;
+  width: 100%;
+  height: 38.75rem;
+  background-color: rgba(11, 30, 144, 0.9);
+  overflow: hidden;
+  background-image: linear-gradient(0deg, transparent 24%, rgba(65, 90, 219, 0.04) 25%, rgba(65, 90, 219, 0.04) 26%, transparent 27%, transparent 74%, rgba(65, 90, 219, 0.04) 75%, rgba(65, 90, 219, 0.04) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(65, 90, 219, 0.04) 25%, rgba(65, 90, 219, 0.04) 26%, transparent 27%, transparent 74%, rgba(65, 90, 219, 0.04) 75%, rgba(65, 90, 219, 0.04) 76%, transparent 77%, transparent);
+  background-size: 7.5rem 7.5rem;
+  font-size: 2em;
+}
+#aboutus .container {
+  background-image: url(https://cdn.kdcf.or.kr/kcf/contents/img/portal/main/deco_together.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+#aboutus .container .btn {
+  width: 13.125rem;
+  height: 3.875rem;
+  display: block;
+  margin-top: 2rem;
+  background: url(https://cdn.kdcf.or.kr/kcf/contents/img/portal/main/btn_rounded.svg) no-repeat;
+  box-sizing: cover;
+}
+#aboutus:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8.625rem;
+  height: 8.625rem;
+  background: url(https://cdn.kdcf.or.kr/kcf/contents/img/portal/main/deco_bottom_left.png);
+  background-size: 100% auto;
+  background-position: left top;
+}
+
+#ft {
+  position: relative;
+  width: 100%;
+  padding: 3.375rem 0 2.5rem;
+  background: #081121;
+  color: white;
+  font-size: 0.95em;
+}
+#ft .container .ftinner .copy {
+  font-size: 0.75em;
+}
+
+// layout
+.scrollpage{
+  position: relative;
+  text-decoration: none;
+
+  &;after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    bottom: -5px;
+    left:0; right: 0;
+    width: 0;
+    background-color: rgb(11, 30, 144, 0.9);
+    transition: 0.5s;
+    margin: 5px auto 0;  // 가운데정렬
+  }
+  &.on:after{
+
+  }
+}
