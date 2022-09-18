@@ -84,3 +84,14 @@ svg {
 .decoration .deco_bell svg .circle {
     fill: #2369dd;
 }
+
+/* 2thBranch */
+.secStyle #hd{
+    background-color: rgba(0,0,0,0.5) !important;
+}
+.secStyle #gnb .scrollPage{
+    color: white !important;
+}
+.secStyle a.scrollPage:hover, a.scrollPage.on{
+    color: white !important;
+}
